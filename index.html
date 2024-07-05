@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="faviconPf.ico">
+    <title> Porfolio</title>
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    
+
+</head>
+
+<style> 
+
+</style>
+
+<body>
+    <header>
+        <h3> Nahuel E. Lencina</Em></h3>
+        <button class="btn-default" onclick="scrollToSection('sobreMi')">Sobre mi</button>
+        <button class="btn-default"onclick="scrollToSection('misProyectos')">Proyectos</button>
+        <button class="btn-default"onclick="scrollToSection('contacto')">Contactos</button>
+        <button class="btn-flotante" id="scrollBoton" onclick="irArriba()">Ir arriba</button>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                var button = document.getElementById('scrollBoton');
+                if (window.scrollY > 0) {
+                    button.style.display = 'block'; // Muestra el botón cuando se hace scroll
+                } else {
+                    button.style.display = 'none'; // Oculta el botón cuando no hay scroll
+                }             
+            });
+
+            function scrollToSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+             }
+            function irArriba(){
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+      
+    </header>
+    <section class="uno">
+        <div class="caja-central">
+            <div class="caja-cara">
+                <img class="cara" src="FotoPerfil.JPG" alt="Nahuel Lencina">            
+            </div>
+            <div class="caja-presentacion">
+                <div>    
+                    <h1>Hola!</h1>
+                   
+                    <p class="presentacion">
+                         Mi nombre es Nahuel E. Lencina. 
+                         Soy estudiante de la Tecnicatura Universitaria en Informática.    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="sobreMi" class="dos">
+        <h2>Sobre mí</h2>
+        <p> 
+            Soy estudiante de la Universidad Nacional General Sarmiento de
+            la carrera tecnicatura universitaria en Informática. Realicé cursos de
+            forma autodidacta donde adquirí conocimientos en las tecnologias C
+            ++ - C# - POO - .NET - SQL y Bases de Datos SQL. Me destaco por
+            ser una persona confiable, perseverante, resolutivo y responsable.
+            Busco insertarme en una empresa de software, para poder seguir
+            creciendo profesionalmente y sacar el mejor rendimiento de mis
+            habilidades como desarrollador.
+        </p>
+       
+        <h2>Aptitudes</h2>
+        <p>
+            Estas son algunas de las tecnologías de las que tengo conocimientos.
+        </p>
+        <div class="aptitudes">
+            <div class="tech-list">
+                
+                
+                <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="tech" alt="">
+                <img src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png" class="tech" alt="">
+                <img src="https://e7.pngegg.com/pngimages/105/481/png-clipart-net-framework-software-framework-programmer-computing-platform-microsoft-corporation-7s-framework-example-blue-text.png" class="tech" alt="">
+                <img src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server-1.svg" class="tech" alt="">
+                
+            </div>
+            <div class="tech-list"> 
+                
+            </div>
+        </div>
+        <h2>Cursos realizados</h2>
+        <ul>
+            <li>Curso de Fundamentos de la Programación Nivel Universidad [GRATIS] 👉 <a href="maxiprograma.com/seh">Ver</a></li>
+            <li>Curso de Programación con C# Nivel 1 [Desde Cero]</li>
+            <li>Curso de Programación con C# Nivel 2: POO + .NET + SQL</li>
+            <!--Curso de Programación con C# Nivel 3: Web ASP .NET Parte 1-->
+            <li>Curso de Bases de Datos: SQL microsoft-sql-server</li>
+            
+        </ul>
+    </section>
+    <section id="misProyectos" class="tres">
+       <h2>Mis Proyectos</h2>
+        <div class="proyectos">
+            <div class="card">
+                <h3>Aplicación de escritorio</h3>
+                <img src="App_Escritorio.png" alt="maxiprograma.com">
+                <p>
+                    Catalogo de Articulos.
+                </p>
+                <a href="https://youtu.be/980qG8H_-hg" target="_blank">Ver</a>
+            </div>
+           
+          
+        </div>
+    </section>
+    <footer>
+        <section id="contacto" class="cuatro">
+            <h2>Contactame</h2>
+                <div class="contacto">
+                    <a href="https://www.linkedin.com/in/nahuel-lencina-411a85265/" target="_blank">
+                        <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social" alt="">
+                    </a>
+
+                    <hr>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B541137617381&text=Hola+Nahuel%2C+me+contacto+a+trav%C3%A9s+de+tu+portfolio.&type=phone_number&app_absent=0" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfPwFoKGtJs_3Bi1UbeQLBEDs2n_A9rJ4yrg&usqp=CAU" class="red-social" alt="">
+                    </a>
+                    <hr>
+                    <a href="https://github.com/NahuelLencina/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="">
+                    </a>
+
+
+                </div>
+        </section>        
+    </footer>
+</body>
+</html>
